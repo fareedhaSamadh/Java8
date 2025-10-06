@@ -4,8 +4,8 @@ package com.Biconsumer.example;
 public interface FunctionalInterfaceDemo {
 	void myMethod();
 	
-	default void myGetmethod1() {
-		System.out.println("Hello!!!") ;
+	public default void myGetmethod1() {
+		System.out.println("Hello i am default FunctionalInterfaceDemo impelementation!!!") ;
 	}
 	
 	default void myGetmethod2() {
@@ -13,4 +13,7 @@ public interface FunctionalInterfaceDemo {
 	}
 	
 	
+	/*
+	 * default int hashCode() { return 5 ; }
+	 */
 }
